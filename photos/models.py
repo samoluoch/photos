@@ -5,7 +5,16 @@ from django.db import models
 
 class Category(models.Model):
     '''
-    This is the cetgories class
+    This is the cetegories class
+    '''
+    name = models.CharField(max_length =30)
+
+    def __str__(self):
+        return self.name
+
+class Location(models.Model):
+    '''
+    This is the location class
     '''
     name = models.CharField(max_length =30)
 
@@ -22,7 +31,7 @@ class Image(models.Model):
     description = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
     category = models.ForeignKey(Category)
-    # location = models.ForeignKey(Location)
+    location = models.ForeignKey(Location, null=True)
 
     def save_image(self):
         self.save()
