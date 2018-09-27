@@ -1,0 +1,30 @@
+{%extends 'all-images/base.html'%}
+
+{% block content %}
+{{block.super}}
+
+ <div class="container">
+
+    <!-- Looping through images   -->
+    {% for image in images %}
+
+    <div class="row">
+        <div class="col-md-2"></div>
+      <!-- displaying Images -->
+      <div class="col-xs-6 col-sm-6 col-md-8 col-lg-6">
+        <h2 class="text-center"> {{ image.name }} </h2>
+        <p class="text-center">{{image.description}} </p>
+      <!-- </div> -->
+      <div class="col-md-2"></div>
+    </div>
+
+    {% empty %}
+    <div class="row">
+      <h2 class="text-center">There No Images</h2>
+    </div>
+    {% endfor %}
+
+   </div>
+
+
+{% endblock %}
