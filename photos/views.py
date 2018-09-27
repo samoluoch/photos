@@ -35,7 +35,24 @@ def past_days_image(request, past_date):
 
 
 
+def search_results(request):
+
+    if 'image' in request.GET and request.GET["image"]:
+        search_term = request.GET.get("image")
+        searched_images = Image.search_by_title(search_term)
+        message = f"{search_term}"
+
+        return render(request, 'all-images/search.html',{"message":message,"images": searched_images})
+
+    else:
+        message = "You haven't searched for any term"
+        return render(request, 'all-images/search.html',{"message":message})
+
+
 def image(request,image_id):
+    '''
+    This is a function that displays individual images
+    '''
     try:
         images = Image.objects.get(id=image_id)
     except DoesNotExist:

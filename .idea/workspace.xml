@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e75b577e-bb5c-4c29-abc7-3741ee552c60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/photos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/photos/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/photos/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/photos/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/photos/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,10 +16,11 @@
     <session id="-1532016728">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -44,14 +46,14 @@
         <counts>
           <entry key="gitignore" value="8" />
           <entry key="html" value="170" />
-          <entry key="py" value="564" />
+          <entry key="py" value="707" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="170" />
           <entry key="PLAIN_TEXT" value="8" />
-          <entry key="Python" value="564" />
+          <entry key="Python" value="707" />
         </counts>
       </usages-collector>
     </session>
@@ -61,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photos/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="60">
+              <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -85,17 +87,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photos/templates/all-images/image.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+            <state relative-caret-position="360">
+              <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/photos/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="372">
-              <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+              <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -109,11 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/photos/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+            <state relative-caret-position="365">
+              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
               </folding>
@@ -155,6 +157,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>image_id</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -171,10 +178,10 @@
         <option value="$PROJECT_DIR$/photos/templates/all-images/image.html" />
         <option value="$PROJECT_DIR$/photos/templates/all-images/today-images.html" />
         <option value="$PROJECT_DIR$/gallery/settings.py" />
-        <option value="$PROJECT_DIR$/photos/urls.py" />
-        <option value="$PROJECT_DIR$/photos/views.py" />
         <option value="$PROJECT_DIR$/photos/admin.py" />
         <option value="$PROJECT_DIR$/photos/models.py" />
+        <option value="$PROJECT_DIR$/photos/urls.py" />
+        <option value="$PROJECT_DIR$/photos/views.py" />
       </list>
     </option>
   </component>
@@ -349,10 +356,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos/templates/all-images/image.html">
+    <entry file="file://$PROJECT_DIR$/photos/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="90">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -362,6 +372,9 @@
           <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photos/templates/all-images/past-images.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/photos/templates/all-images/today-images.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -384,43 +397,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos/templates/all-images/past-images.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photos/views.py">
+    <entry file="file://$PROJECT_DIR$/photos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="21" column="8" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="372">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photos/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="60">
+          <caret line="4" column="42" lean-forward="true" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos/admin.py">
+    <entry file="file://$PROJECT_DIR$/photos/templates/all-images/image.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photos/models.py">
+    <entry file="file://$PROJECT_DIR$/photos/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="33" column="52" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
+        <state relative-caret-position="365">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
