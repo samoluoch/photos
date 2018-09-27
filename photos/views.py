@@ -9,6 +9,12 @@ def welcome(request):
     return render(request, 'welcome.html')
 
 
+def image_of_day(request):
+    date = dt.date.today()
+    images = Image.todays_image()
+    return render(request, 'all-news/today-news.html', {"date": date, "images": images})
+
+
 
 # FUNCTION TO CONVERT DATE OBJECT TO FIND EXACT DAY
 def image_of_day(request):
@@ -19,7 +25,7 @@ def image_of_day(request):
 
 def image(request,image_id):
     try:
-        image = Image.objects.get(id = image_id)
+        images = Image.objects.get(id=image_id)
     except DoesNotExist:
         raise Http404()
-    return render(request,"all-images/image.html", {"image":image})
+    return render(request,"all-images/image.html", {"image":images})
