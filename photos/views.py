@@ -13,8 +13,8 @@ def welcome(request):
 # FUNCTION TO CONVERT DATE OBJECT TO FIND EXACT DAY
 def image_of_day(request):
     date = dt.date.today()
-    news = Image.todays_image()
-    return render(request, 'all-images/image.html', {"date": date, "news": news})
+    images = Image.todays_image()
+    return render(request, 'all-images/today-images.html', {"date": date, "images": images})
 
 
 def image(request,image_id):
