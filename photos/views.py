@@ -9,18 +9,30 @@ def welcome(request):
     return render(request, 'welcome.html')
 
 
-def image_of_day(request):
-    date = dt.date.today()
-    images = Image.todays_image()
-    return render(request, 'all-news/today-news.html', {"date": date, "images": images})
-
-
 
 # FUNCTION TO CONVERT DATE OBJECT TO FIND EXACT DAY
 def image_of_day(request):
     date = dt.date.today()
     images = Image.todays_image()
     return render(request, 'all-images/today-images.html', {"date": date, "images": images})
+
+
+# View Function to present images from past days
+def past_days_image(request, past_date):
+    try:
+        # Converts data from the string Url
+        date = dt.datetime.strptime(past_date, '%Y-%m-%d').date()
+    except ValueError:
+        # Raise 404 error when ValueError is thrown
+        raise Http404()
+        assert False
+
+    if date == dt.date.today():
+        return redirect(image_of_day)
+
+    images = Image.days_image(date)
+    return render(request, 'all-news/past-images.html', {"date": date, "images": images})
+
 
 
 def image(request,image_id):
