@@ -13,11 +13,13 @@
     <!-- displaying Details -->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <h2 class="text-center"> {{ image.name }} </h2>
-      <a href="/image/{{image.id}}" class="text-center">{{image.description}} </a>
+      <a href="/image/{{image.id}}" class="text-center">{{image.location}} </a>
     </div>
     <!--Display Image  -->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <img src="{{image.image.url}}" class="img-responsive" alt="Image">
+      <div class="thumbnail">
+        <img src="{{image.image.url}}" class="img-responsive" alt="Image">
+      </div>
     </div>
 
   </div>
