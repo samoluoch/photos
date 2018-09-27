@@ -31,7 +31,7 @@ def past_days_image(request, past_date):
         return redirect(image_of_day)
 
     images = Image.days_image(date)
-    return render(request, 'all-news/past-images.html', {"date": date, "images": images})
+    return render(request, 'all-images/past-images.html', {"date": date, "images": images})
 
 
 
