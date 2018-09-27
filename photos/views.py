@@ -11,4 +11,4 @@ def welcome(request):
 #         image = Image.objects.get(id = image_id)
 #     except DoesNotExist:
 #         raise Http404()
-#     return render(request,"description.html", {"image":image})
+#     return render(request,"image.html", {"image":image})
