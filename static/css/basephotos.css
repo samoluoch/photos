@@ -2,3 +2,7 @@ h1
 {
   color: blue;
 }
+
+#col-xs-6 col-sm-6 col-md-6 col-lg-6 {
+background-color: blue;
+}

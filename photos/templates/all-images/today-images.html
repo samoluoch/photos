@@ -10,19 +10,18 @@
   {% for image in images %}
 
   <div class="row">
-    <!-- displaying Details -->
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <h5> Image Name: {{ image.name }} </h5>
-      <p> Category: {{ image.category }} </p>
-      <p> Category: {{ image.location }} </p>
-    </div>
-    <!--Display Image  -->
-    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <a href="/image/{{image.id}}" class="text-center"> <img src="{{image.image.url}}" class="img-responsive" alt="Image">
- </a>
+      <!--Display Image  -->
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" id="">
+        <div class="thumbnail" style="width:50%;">
+            <a href="/image/{{image.id}}" class="text-center"> <img style="float:left;" src="{{image.image.url}}" class="img-responsive" alt="Image"></a>
 
-      <div class="thumbnail">
       </div>
+    </div>
+    <!-- displaying Details -->
+    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" >
+        <p><h4 style="color: green;"> Image Name:</h4> {{ image.name }} </p>
+        <p> <h4 style="color: blue;">Image Category:</h4> {{ image.category }} </p>
+        <p> <h4 style="color: blue;">Image Location:</h4> {{ image.location }} </p>
     </div>
 
   </div>
