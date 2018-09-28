@@ -9,26 +9,43 @@
    </div>
 
    <div class="row">
+       <div class="jumbotron">
        <img src="{{image.image.url}}" class="img-responsive" alt="Image">
+       </div>
 
    </div>
 
    <div class="row">
-       <h3 class="text-center">{{image.name}}</h3>
+       <div class="thumbnail">
+       <h3 class="text-center">Image Name:</h3>
+       <h6 class="text-center">{{image.name}}</h6>
+       </div>
    </div>
 
      <div class="row">
-         <p class="text-center">{{image.description}}</p>
+         <div class="thumbnail">
+         <h3 class="text-center">Description:</h3>
+             <p class="text-center"> {{image.description}}</p>
+         </div>
     </div>
 
    <div class="row">
+       <div class="thumbnail">
+           <h3 class="text-center">Time Posted:</h3>
      <p class="text-center">Posted {{image.pub_date|timesince}} </p>
+       </div>
    </div>
      <div class="row">
-         <h4 class="text-center">{{image.location}}</h4>
+         <div class="thumbnail">
+         <h3 class="text-center">Image Location:</h3>
+         <h6 class="text-center">Location: {{image.location}}</h6>
+         </div>
     </div>
      <div class="row">
-         <h4 class="text-center">{{image.category}}</h4>
+         <div class="thumbnail">
+         <h3 class="text-center">Image Category:</h3>
+         <h6 class="text-center">Category: {{image.category}}</h6>
+         </div>
     </div>
 
 

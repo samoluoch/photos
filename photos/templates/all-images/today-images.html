@@ -12,13 +12,16 @@
   <div class="row">
     <!-- displaying Details -->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      <h2 class="text-center"> {{ image.name }} </h2>
-      <a href="/image/{{image.id}}" class="text-center">{{image.location}} </a>
+      <h5> Image Name: {{ image.name }} </h5>
+      <p> Category: {{ image.category }} </p>
+      <p> Category: {{ image.location }} </p>
     </div>
     <!--Display Image  -->
     <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+            <a href="/image/{{image.id}}" class="text-center"> <img src="{{image.image.url}}" class="img-responsive" alt="Image">
+ </a>
+
       <div class="thumbnail">
-        <img src="{{image.image.url}}" class="img-responsive" alt="Image">
       </div>
     </div>
 
