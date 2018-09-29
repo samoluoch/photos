@@ -4,33 +4,33 @@ from .models import Category,Location,Image
 # Create your tests here.
 class CategoryTestClass(TestCase):
     def setUp(self):
-        self.new_category = Category()
+        self.Party = Category(name='Party').save()
 
     def test_new_category_isinstance_of_category(self):
-        self.assertTrue(isinstance(self.new_category, Category))
+        self.assertTrue(isinstance(self.Party, Category))
 
 class LocationTestClass(TestCase):
     def setUp(self):
-        self.new_location = Location()
+        self.Nairobi = Location('Nairobi')
 
     def test_new_location_isinstance_of_location(self):
-        self.assertTrue(isinstance(self.new_location, Location))
+        self.assertTrue(isinstance(self.Nairobi, Location))
 
 
 class ImageTestClass(TestCase):
 
     def setUp(self):
         # Creating a new location and saving it
-        self.new_location = Location(name='nairobi')
+        self.new_location = Location(name='Nairobi')
         self.new_location.save()
 
         # Creating a new category and saving it
-        self.new_category = Category(name = 'testing')
+        self.new_category = Category(name = 'Party')
         self.new_category.save()
 
         # Creating a new image and saving it
 
-        self.new_image= Image(name = 'Test Image',description = 'This is a random test image',category = 'party', location='nairobi')
+        self.new_image= Image(name = 'Test Image',description = 'This is a random test image',category = 'Party', location='nairobi')
         self.new_image.save()
 
         self.new_image.category.location.add(self.new_category,self.new_location)
@@ -54,42 +54,7 @@ class ImageTestClass(TestCase):
         self.assertTrue(len(image_by_date) == 0)
 
 
-
-
-
-# #
-# class Image(models.Model):
-#     '''
-#     This is image class model
-#     '''
-#     image = models.ImageField(upload_to='image/', null=True)
-#     name = models.CharField(max_length =60)
-#     description = models.TextField()
-#     pub_date = models.DateTimeField(auto_now_add=True)
-#     category = models.ForeignKey(Category)
-#     location = models.ForeignKey(Location, null=True)
-#
-#     def save_image(self):
-#         self.save()
-#
-#     @classmethod
-#     def todays_image(cls):
-#         today = dt.date.today()
-#         image = cls.objects.filter(pub_date__date=today)
-#         return image
-#
-#     @classmethod
-#     def search_by_category(cls, search_term):
-#         # cat = category.objects.get(name=search_term)
-#         image = cls.objects.filter(category__name__icontains=search_term)
-#         return image
-#
-#     @classmethod
-#     def search_by_location(cls, search_term):
-#         image = cls.objects.filter(location__name__icontains=search_term)
-#         return image
-#
-#     @classmethod
-#     def days_image(cls, date):
-#         image = cls.objects.filter(pub_date__date=date)
-#         return image
+    def tearDown(self):
+        Image.objects.all().delete()
+        Location.objects.all().delete()
+        Category.objects.all().delete()
