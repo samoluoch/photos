@@ -59,6 +59,11 @@ class Image(models.Model):
         image = cls.objects.filter(pub_date__date=date)
         return image
 
+    @classmethod
+    def all_images(cls):
+        images = cls.objects.all()
+        return images
+
 
 
 
